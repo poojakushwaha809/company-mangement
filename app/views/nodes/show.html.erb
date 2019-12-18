@@ -1,0 +1,36 @@
+<p>
+  <strong>country name:</strong>
+  <%= @node.place.company.city.state.country.country_name %>
+</p>
+
+<p>
+  <strong>state name:</strong>
+  <%= @node.place.company.city.state.state %>
+</p>
+
+<p>
+  <strong>city name:</strong>
+  <%= @node.place.company.city.city_name %>
+</p>
+
+
+<p>
+  <strong>company name:</strong>
+  <%= @node.place.company.name %>
+</p>
+
+<p>
+  <strong>place name:</strong>
+  <%= @node.place.place_name %>
+</p>
+
+<p>
+  <strong>node name:</strong>
+  <%= @node.node_name %>
+</p>
+
+
+
+<%= link_to 'Back to New node', new_node_path %>     
+ 
+

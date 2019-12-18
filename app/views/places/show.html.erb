@@ -1,0 +1,33 @@
+<p>
+  <strong>country name:</strong>
+  <%= @place.company.city.state.country.country_name %>
+</p>
+
+<p>
+  <strong>state name:</strong>
+  <%= @place.company.city.state.state %>
+</p>
+
+<p>
+  <strong>city name:</strong>
+  <%= @place.company.city.city_name %>
+</p>
+
+
+<p>
+  <strong>company name:</strong>
+  <%= @place.company.name %>
+</p>
+
+<p>
+  <strong>place name:</strong>
+  <%= @place.place_name %>
+</p>
+
+<%= link_to 'Next page', new_node_path %> |
+
+
+
+<%= link_to 'Back to New place', new_place_path %>     
+ 
+
