@@ -15,16 +15,42 @@
     </div>
   <% end %>
 
-    
+   <p>
+    <%= f.label :Name %><br>
+    <%= f.text_field :name %>
+  </p>
+ 
+
+<p>
+    <%= f.label :select_country %><br>
+    <%= f.collection_select :country_id, Country.order(:country_name),:id,:country_name, include_blank: true %>
+  </p>
+
+
+ <p>
+    <%= f.label :select_state %><br>
+    <%= f.collection_select :state_id, State.order(:state),:id,:state, include_blank: true %>
+  </p>
+
  <p>
     <%= f.label :select_city %><br>
     <%= f.collection_select :city_id, City.order(:city_name),:id,:city_name, include_blank: true %>
   </p>
 
-  <p>
-    <%= f.label :Name %><br>
-    <%= f.text_field :name %>
+   <p>
+    <%= f.label :start_date %><br>
+    <%= f.date_field :start_date %>
   </p>
+ 
+
+
+<p>
+    <%= f.label :postcode %><br>
+    <%= f.number_field :postcode %>
+  </p>
+
+
+  
  
  
   <p>
