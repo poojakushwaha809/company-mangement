@@ -18,6 +18,9 @@
   <strong>company name:</strong>
   <%= @company.name %>
 </p>
+
+
+<%= image_tag(@company.company_image.url) %>
  
  <%= link_to 'Next page', new_place_path %> |
 
