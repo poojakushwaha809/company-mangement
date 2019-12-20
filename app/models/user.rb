@@ -1,4 +1,8 @@
 class User < ApplicationRecord
+
+	mount_uploader :state_image, StateUploader
+
+
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   belongs_to :company

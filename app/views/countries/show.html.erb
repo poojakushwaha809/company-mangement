@@ -3,6 +3,9 @@
   <%= @country.country_name %>
 </p>
 
+ 
+<%= image_tag(@country.country_image.url, size:10*10) %></br>
+
 
 <%= link_to 'Next page', new_state_path %> |
 

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_12_19_140423) do
+ActiveRecord::Schema.define(version: 2019_12_20_082917) do
 
   create_table "cities", force: :cascade do |t|
     t.string "city_name"
@@ -38,6 +38,7 @@ ActiveRecord::Schema.define(version: 2019_12_19_140423) do
     t.string "country_name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "country_image"
   end
 
   create_table "nodes", force: :cascade do |t|
@@ -72,6 +73,7 @@ ActiveRecord::Schema.define(version: 2019_12_19_140423) do
     t.integer "country_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "state_image"
     t.index ["country_id"], name: "index_states_on_country_id"
   end
 

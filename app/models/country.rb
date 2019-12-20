@@ -1,4 +1,5 @@
 class Country < ApplicationRecord
+	mount_uploader :country_image, CountryUploader
 	  has_many :states
 	  has_many :cities
 	  has_many :companies
