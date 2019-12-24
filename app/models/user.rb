@@ -1,12 +1,13 @@
 class User < ApplicationRecord
-
-	mount_uploader :state_image, StateUploader
+ belongs_to :company
+ belongs_to :role
+	mount_uploader :image, UserUploader
 
 
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
-  belongs_to :company
+  
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
-  mount_uploader :image, AvatarUploader
+  
 end

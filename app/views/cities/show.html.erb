@@ -13,6 +13,15 @@
   <%= @city.city_name %>
 </p>
 
+<%= image_tag(@city.city_image.url, size:10*10) %></br>
+
+
+  <p>
+    <%= f.label :city_image %><br>
+    <%= f.file_field :city_image %>
+  </p>
+
+
 <%= link_to 'Next page', new_company_path %> |
 
 

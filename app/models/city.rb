@@ -1,6 +1,8 @@
 class City < ApplicationRecord
-	  has_many :companies
 
+	mount_uploader :city_image, CityUploader
+	  has_many :companies
+      
   belongs_to :state
 
   validates :city_name, presence: true,
