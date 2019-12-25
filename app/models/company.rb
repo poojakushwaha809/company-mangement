@@ -7,8 +7,8 @@ class Company < ApplicationRecord
   has_many :places
   has_many :nodes
   has_many :users
-  validates :name, presence: true,
-                    length: { minimum: 3 }
-     validates :name, uniqueness: true
+  # validates :name, presence: true,
+  #                   length: { minimum: 3 }
+  #    validates :name, uniqueness: true
 
 end
